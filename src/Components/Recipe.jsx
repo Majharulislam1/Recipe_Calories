@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Recipe = ({recipe}) => {
-    console.log(recipe);
+const Recipe = ({recipe,handle_Cooks}) => {
+    
     const {recipe_image,recipe_id,recipe_name,short_description,ingredients,preparing_time,calories} = recipe;
     return (
         <div>
@@ -16,9 +16,18 @@ const Recipe = ({recipe}) => {
                             <div className='border-b-[1px] pb-4'>
                                 <h1 className='text-[1.25rem] font-bold my-4'>Ingredients: {ingredients.length}</h1>
                                 <ul className='list-disc ml-6 text-[#878787]'>
-                                    <li>500g ground beef </li>
-                                    <li> 1 onion, chopped </li>
-                                    <li> 2 cloves garlic, minced</li>
+                                    {
+                                         ingredients.map(items => {
+                                            return (
+            
+                                                <li key={items}>{items}</li>
+                                            );
+            
+            
+                                        })
+                                    }
+                                    
+                                     
                                 </ul>
                             </div>
 
@@ -34,7 +43,7 @@ const Recipe = ({recipe}) => {
                             </div>
 
                             <div>
-                                <button className='bg-[#0be58a] font-semibold px-6 py-3 rounded-full'>Want to cook</button>
+                                <button onClick={()=> handle_Cooks(recipe_id)} className='bg-[#0be58a] font-semibold px-6 py-3 rounded-full'>Want to cook</button>
                             </div>
                         </div>
         </div>
