@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Recipe from './Recipe';
 
 const OurRecipe = () => {
 
+    const [recipe,setRecipe] = useState([]);
+
+    useEffect(()=>{
+          fetch('recipe.json')
+          .then(res => res.json())
+          .then(data => setRecipe(data));
+    },[])
+
+     
 
 
     return (
@@ -15,43 +25,15 @@ const OurRecipe = () => {
 
 
             <div className='flex'>
-                <div className='w-[70%]'>
+                <div className='w-[70%] mr-4'>
                     <div className='grid grid-cols-3 gap-6'>
-                        <div className="cards_recipe p-4 border border-1 rounded-xl">
-                            <div className='mb-3'>
-                                <img src="1.png" alt="" />
-                            </div>
-                            <div className='border-b-[1px] pb-4'>
-                                <h3 className='text-[1.5rem] font-bold mb-2'>Spaghetti Bolognese</h3>
-                                <p className='text-[#878787]'> Classic Italian pasta dish with savory meat sauce.</p>
-                            </div>
-                            <div className='border-b-[1px] pb-4'>
-                                <h1 className='text-[1.25rem] font-bold my-4'>Ingredients: 6</h1>
-                                <ul className='list-disc ml-6 text-[#878787]'>
-                                    <li>500g ground beef </li>
-                                    <li> 1 onion, chopped </li>
-                                    <li> 2 cloves garlic, minced</li>
-                                </ul>
-                            </div>
-
-                            <div className='py-4 flex justify-between items-center'>
-                                <div className='flex items-center'>
-                                    <img src="clock.png" className='mr-1' alt="" />
-                                    <p className='text-[#878787]'>30 minutes</p>
-                                </div>
-                                <div className='flex items-center'>
-                                    <img src="fire.png" className='mr-1' alt="" />
-                                    <p className='text-[#878787]'>600 calories</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <button className='bg-[#0be58a] font-semibold px-6 py-3 rounded-full'>Want to cook</button>
-                            </div>
-                        </div>
+                        {
+                            recipe.map(recipe_item => <Recipe recipe={recipe_item} key={recipe_item.recipe_id}></Recipe>)
+                        }
                     </div>
                 </div>
 
+                 
 
                 <div className='w-[30%]'>
                     <div className='border rounded-xl border-1 p-4'>

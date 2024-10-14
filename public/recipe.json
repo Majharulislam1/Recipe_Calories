@@ -1,0 +1,92 @@
+[
+    {
+        "recipe_image": "https://i.ibb.co/rwNF6G4/1.png",
+        "recipe_id": "001",
+        "recipe_name": "Chicken Stir Fry",
+        "short_description": "A quick and easy chicken stir fry with a flavorful soy sauce base.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g bell pepper",
+            "100 g onion",
+            "2 cloves garlic"
+        ],
+        "preparing_time": 30,
+        "calories": 320 
+    },
+    {
+        "recipe_image": "https://i.ibb.co/9Vkp56V/svgviewer-png-output.png",
+        "recipe_id": "002",
+        "recipe_name": "Beef Tacos",
+        "short_description": "Classic beef tacos served with lettuce, cheese, and a zesty salsa.",
+        "ingredients": [
+            "500 g ground beef",
+            "100 g lettuce",
+            "150 g cheese",
+            "50 g salsa",
+            "8 taco shells"
+        ],
+        "preparing_time": 25,
+        "calories": 450 
+    },
+    {
+        "recipe_image": "https://i.ibb.co/WyDz0HG/pexels-1.jpg",
+        "recipe_id": "003",
+        "recipe_name": "Vegan Pasta",
+        "short_description": "A delightful vegan pasta dish with fresh basil and tomato sauce.",
+        "ingredients": [
+            "400 g pasta",
+            "200 g tomato sauce",
+            "100 g basil leaf",
+            "150 g cherry tomatoes",
+            "2 tbsp olive oil"
+        ],
+        "preparing_time": 20,
+        "calories": 300
+    },
+    {
+        "recipe_image": "https://i.ibb.co/KXLQYf9/pexels-v-1.jpg",
+        "recipe_id": "004",
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Tender grilled salmon with a hint of lemon and herbs.",
+        "ingredients": [
+            "300 g salmon fillet",
+            "1 lemon",
+            "1 tbsp olive oil",
+            "10 g dill",
+            "1 pinch salt"
+        ],
+        "preparing_time": 15,
+        "calories": 400 
+    },
+    {
+        "recipe_image": "https://i.ibb.co/wp3m3gC/pexels-markus.jpg",
+        "recipe_id": "005",
+        "recipe_name": "Shrimp Fried Rice",
+        "short_description": "A tasty shrimp fried rice dish with mixed vegetables.",
+        "ingredients": [
+            "200 g shrimp",
+            "300 g rice",
+            "100 g peas",
+            "50 g carrots",
+            "2 tbsp soy sauce"
+        ],
+        "preparing_time": 20,
+        "calories": 350 
+    },
+    {
+        "recipe_image": "https://i.ibb.co/NsbkfYw/pexels-trainleader-14737-1.jpg",
+        "recipe_id": "006",
+        "recipe_name": "Chocolate Cake",
+        "short_description": "A rich and moist chocolate cake perfect for any occasion.",
+        "ingredients": [
+            "200 g flour",
+            "100 g cocoa powder",
+            "200 g sugar",
+            "3 eggs",
+            "150 ml milk"
+        ],
+        "preparing_time": 60,
+        "calories": 500
+    }
+]
